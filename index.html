@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special For You Manal</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+            color: #880e4f;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .frame {
+            border: 10px solid #ff4081;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 15px;
+            background: white;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff4081;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+        .hidden {
+            display: none;
+        }
+        .heart {
+            font-size: 100px;
+            animation: heartbeat 1s infinite alternate;
+        }
+        @keyframes heartbeat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="mainContent">
+        <h1>Dear Manal,</h1>
+        <p>You are my special and most precious friend. I want to keep this friendship forever. Will you accept my friendship proposal?</p>
+        
+        <div class="frame">
+            <img src="D:\‏\4.Far.Cry.4.Repack.[V1.4-DLC]-VEBMAX\ \Screenshot (265).png" alt="Manal's Picture" width="300">
+        </div>
+
+        <br>
+        <button class="button" onclick="showLoveMessage()">Accept</button>
+        <button class="button" style="background-color: grey;">Think About It</button>
+    </div>
+
+    <!-- Hidden Message & Second Picture -->
+    <div class="container hidden" id="loveMessage">
+        <h1>Now You Are My Jaanu ❤️</h1>
+        <p>I love you so much! You are the most special person in my life. 💖</p>
+
+        <div class="frame">
+            <img src="D:\‏\4.Far.Cry.4.Repack.[V1.4-DLC]-VEBMAX\ \Polish_20250331_0842.png" alt="Our Love Picture" width="300">
+        </div>
+
+        <div class="heart">❤️❤️❤️</div>
+    </div>
+
+    <script>
+        function showLoveMessage() {
+            document.getElementById("mainContent").style.display = "none";
+            document.getElementById("loveMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
